@@ -3,6 +3,35 @@
     margin: 0;
 }
 
+body {
+    background-color: rgb(156, 149, 154);
+}
+
+header {
+    background-color: rgb(212, 182, 176);
+    border-radius: 10px;
+    display: block;
+    width: 60%;
+    height: 100%;
+    margin: 70px 250px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.container {
+    background-color: rgb(199, 196, 189);
+    border-radius: 20px;
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    margin: 0 250px;
+    padding-left: 90px;
+    padding-top: 40px;
+}
+
 .wheel {
     border: 2px solid black;
     border-radius: 50%;
@@ -56,6 +85,7 @@
     position: absolute;
     border: 2px solid;
     transform-origin: 50% 0%;
+    animation: cabins 10s ease-in-out infinite;
   }
 
   .cabin:nth-of-type(1) {
@@ -96,3 +126,21 @@
       transform: rotate(360deg);
     }
  }
+
+ @keyframes cabins {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      background-color: yellow;
+    }
+    50% {
+      background-color: purple;
+    }
+    75% {
+      background-color: yellow;
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
