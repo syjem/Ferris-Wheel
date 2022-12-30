@@ -77,9 +77,17 @@
     left: 17%;
     top: 7%;
   }
-  
+
   .cabin:nth-of-type(6) {
     right: 17%;
     top: 7%;
   }
   
+  @keyframes wheel {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+ }
