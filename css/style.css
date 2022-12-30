@@ -39,7 +39,16 @@
   .line:nth-of-type(5) {
     transform: rotate(240deg);
   }
-  
+
   .line:nth-of-type(6) {
     transform: rotate(300deg);
+  }
+
+  .cabin {
+    background-color: red;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    border: 2px solid;
+    transform-origin: 50% 0%;
   }
